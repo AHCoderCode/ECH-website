@@ -30,6 +30,14 @@
     element.textContent = ECH_CONFIG.phoneDisplay;
   });
 
+  document.querySelectorAll("[data-ech-location]").forEach((element) => {
+    element.textContent = ECH_CONFIG.location;
+  });
+
+  document.querySelectorAll("[data-standard-price]").forEach((element) => {
+    element.textContent = ECH_CONFIG.standardPrice;
+  });
+
   document.querySelectorAll("[data-wa-message]").forEach((link) => {
     const messageKey = link.getAttribute("data-wa-message");
     const message = ECH_CONFIG.messages[messageKey] || ECH_CONFIG.messages.general;
