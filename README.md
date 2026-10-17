@@ -46,7 +46,7 @@ The contact form does not submit information to a server or save it to a databas
 - Exact preschool eligibility requirements.
 - Confirmed program names and availability.
 - Which educational toys, materials, and learning activities are actually available.
-- What the $18.05 standard price covers, its billing period/currency confirmation, and any additional fees.
+- What the $18.05 standard price covers, its billing period and inclusions, and any additional fees.
 - Schedule and frequency options.
 - Actual enrollment process and parent communication arrangements.
 - Staff qualifications, facilities, certifications, or policies, if these will be mentioned.
