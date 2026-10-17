@@ -7,8 +7,11 @@ A responsive, static marketing website for ECH, intended to help families learn 
 - `index.html` — semantic page content, navigation, learning information, pricing, FAQ, contact form, location, and footer.
 - `style.css` — visual system and responsive layouts for mobile, tablet, laptop, and desktop.
 - `script.js` — centralized contact details, WhatsApp message links, mobile navigation, accessible FAQ behavior, automatic copyright year, and contact-form handling.
+- `favicon.svg` — custom ECH browser-tab icon, created as a small vector brand mark (no photos added).
+- `robots.txt` — allows search-engine crawlers to access the public site.
+- `vercel.json` — adds baseline security headers when hosted on Vercel.
 
-No photos or image assets have been added. The hero and activity visuals are made with HTML and CSS.
+No photographs or content images have been added. The hero and activity visuals are made with HTML and CSS; the SVG favicon is the only new image-format asset and was added specifically for your favicon request.
 
 ## Run locally
 
@@ -19,9 +22,27 @@ No photos or image assets have been added. The hero and activity visuals are mad
 
 There is no build step, database, authentication, or backend service required.
 
-## Deploy
+## Deploy to Vercel (recommended)
 
-This is a static frontend. It can be deployed to GitHub Pages or Vercel with the repository root as the site root; no build command is needed. For Vercel, use the framework preset **Other**, leave the build command empty, and deploy the root directory. Deployment must be completed in the hosting account.
+This is a static HTML/CSS/JavaScript frontend. It has no package installation, build step, database, or backend requirement.
+
+1. Open the [Vercel dashboard](https://vercel.com/dashboard) and choose **Add New → Project**.
+2. Import `AHCoderCode/ECH-website` from GitHub (authorize the repository if Vercel asks).
+3. Set **Framework Preset** to **Other** and **Root Directory** to the repository root (`./`).
+4. Leave the **Build Command** blank. With the **Other** preset and no `public` directory, Vercel can serve the root files directly; do not point the output directory at a nonexistent `dist` or `build` folder.
+5. Click **Deploy**. After the first deployment succeeds, future commits to the connected production branch can trigger deployments automatically.
+6. Open the generated deployment URL and check the favicon, layout at mobile and desktop widths, navigation, FAQ, and WhatsApp links. Test the contact form on a device/browser that can open WhatsApp.
+
+The root `vercel.json` applies baseline response-security headers on Vercel. This does not itself create a Vercel project or perform a deployment.
+
+## Alternative: GitHub Pages
+
+1. Open the repository on GitHub and select **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch `main` and folder `/(root)`, then save.
+4. Wait for the Pages workflow to publish, then open the URL displayed in the Pages settings.
+
+GitHub Pages does not apply the response headers configured in `vercel.json`; use the Vercel instructions above if you want those headers without adding a separate hosting configuration.
 
 ## Centralized contact details
 
@@ -51,7 +72,7 @@ The contact form does not submit information to a server or save it to a databas
 - Actual enrollment process and parent communication arrangements.
 - Staff qualifications, facilities, certifications, or policies, if these will be mentioned.
 - Approved brand photographs, if photos are to be added in a future update.
-- Official website domain if a canonical URL is to be configured.
+- Official website domain if a canonical URL, social-sharing URL, or sitemap is to be configured.
 
 ## Implementation notes
 
