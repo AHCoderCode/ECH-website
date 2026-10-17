@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>ECH — EarlyChildHomeschooling</title>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="#24483b"/>
+  <rect x="7" y="7" width="50" height="50" rx="14" fill="none" stroke="#fff9f0" stroke-opacity=".24"/>
+  <path d="M46 11.5 48 16l4.5 2-4.5 2-2 4.5-2-4.5-4.5-2 4.5-2z" fill="#e8bb62"/>
+  <text x="31.5" y="40.5" fill="#fff9f0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="-.8" text-anchor="middle">ECH</text>
+</svg>
