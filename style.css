@@ -376,6 +376,7 @@ h1 em, h2 em { font-weight: 500; color: var(--terracotta); }
 .footer-location-label { color: var(--sage); font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .footer-contact p { margin: 9px 0 18px; color: var(--white); font-family: var(--font-display); font-size: 16px; line-height: 1.5; }
 .footer-contact p span { color: #b9c9bd; font-family: var(--font-body); font-size: 10px; }
+.footer-contact p .footer-city { color: var(--white); font-family: var(--font-display); font-size: 16px; }
 .footer-whatsapp { display: inline-flex; align-items: center; gap: 10px; color: #e7b49c; font-size: 10px; font-weight: 700; }
 .footer-bottom { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: start; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.16); }
 .footer-bottom p { margin: 0; color: #a6b8ac; font-size: 9px; line-height: 1.7; }
